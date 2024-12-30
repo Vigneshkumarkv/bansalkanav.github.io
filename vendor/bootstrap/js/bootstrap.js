@@ -3827,5 +3827,8 @@ var Popover = function ($) {
   return Popover;
 }(jQuery);
 
+SELECT MAX(salary)
+FROM employees
+WHERE salary < (SELECT MAX(salary) FROM employees);
 
 })();
